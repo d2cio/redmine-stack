@@ -17,7 +17,7 @@ services:
   - name: redmine
     type: docker
     image: redmine
-    version: latest
+    version: 3
     ports:
       - 3000
     remoteAccess: false
