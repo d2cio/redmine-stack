@@ -2,7 +2,7 @@ version: '1.0'
 services:
   - name: db
     type: postgres
-    version: 10.4
+    version: 11.1
     configuration: StandAlone
     username: redmine
     database: redmine
@@ -16,7 +16,7 @@ services:
   - name: redmine
     type: docker
     image: redmine
-    version: 3
+    version: 4
     ports:
       - 3000
     remoteAccess: false
@@ -31,7 +31,7 @@ services:
 
   - name: web
     type: nginx
-    version: 1.14
+    version: 1.15
     ports:
       - 80
       - 443
