@@ -2,7 +2,7 @@ version: '1.0'
 services:
   - name: db
     type: postgres
-    version: 11.1
+    version: 11.7
     configuration: StandAlone
     username: redmine
     database: redmine
@@ -31,7 +31,7 @@ services:
 
   - name: web
     type: nginx
-    version: 1.15
+    version: 1.17
     ports:
       - 80
       - 443
